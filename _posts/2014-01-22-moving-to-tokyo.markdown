@@ -4,7 +4,7 @@ title:  "Moving to Tokyo, yeeha!"
 date:   2014-01-22 16:57:51
 ---
 
-<img src="{{ site.baseurl }}/assets/img/img1.jpg">
+<img src="{{ site.baseurl }}assets/img/img1.jpg">
 
 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
 

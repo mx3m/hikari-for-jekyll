@@ -7,7 +7,7 @@ title: Your New Jekyll Site
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-      	<a href="{{ post.url }}">
+      	<a href="{{ site.baseurl }}{{ post.url }}">
 	      <div class="p-wrap">
 	      	<span class="date">{{ post.date | date_to_string }}</span> <p>{{ post.title }} <span class="arrow">&rightarrow;</span></p>
 	      </div>

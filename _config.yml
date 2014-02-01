@@ -1,0 +1,10 @@
+name: "hikari"
+description: "Fluid, responsive blog theme for Jekyll"
+
+baseurl: /
+
+paginate: 10
+
+markdown: rdiscount
+permalink: :year/:month/:title.html
+pygments: true

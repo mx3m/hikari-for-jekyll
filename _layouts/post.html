@@ -1,0 +1,20 @@
+{% include header.html %}
+
+{% if page.previous %} 
+    <a rel="prev" href="{{ page.previous.url }}" id="prev">&larr;</a>
+{% endif %}
+{% if page.next %} 
+    <a rel="next" href="{{ page.next.url }}" id="next">&rarr;</a>
+{% endif %}
+
+<section id="single-wrap">
+	<article class="single-content">
+		<div class="feat">
+			<h5 class="page-date">{{ page.date | date_to_long_string }}</h5>
+		</div>
+		<h1 class="page-title">{{ page.title }}</h1>
+		{{ content }}
+	</article>
+</section>
+
+{% include footer.html %}

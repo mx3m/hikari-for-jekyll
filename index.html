@@ -1,0 +1,18 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+      	<a href="{{ post.url }}">
+	      <div class="p-wrap">
+	      	<span class="date">{{ post.date | date_to_string }}</span> {{ post.title }} <span class="arrow">&rightarrow;</span>
+	      </div>
+	     </a>
+	  </li>
+    {% endfor %}
+  </ul>
+</div>

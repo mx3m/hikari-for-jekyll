@@ -21,19 +21,20 @@ Jekyll and pygments can easily help you to display your best snippets. I slightl
 {% highlight css %}
 header {
   width: 100%;
-  awesomeness: 100%;
-  parallax: 0%;
+  height: 100%;
+  margin: 0;
 }
 
 header h1 {
   font: 3em Georgia, serif;
-  font-weight: bolder;
+  font-weight: 700;
 }
 {% endhighlight %}
 
 {% highlight js %}
-  var ip = '<!--#echo var="REMOTE_ADDR"-->';
-  document.write("Your IP address is" + ip);
+$(document).ready(function(){
+  $('header').fadeIn();	
+});
 {% endhighlight %}
 
 Note that so far, only HTML, CSS and Javascript are styled out of the box. But everything's ready for you to start styling your favorites languages: Python, Ruby, PHP and [many more](http://rubygems.org/gems/pygments.rb). 

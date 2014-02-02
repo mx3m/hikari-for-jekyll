@@ -1,7 +1,8 @@
 name: "hikari"
 description: "Fluid, responsive blog theme for Jekyll"
 
-baseurl: /
+url: "http://m3xm.github.io"
+baseurl: /hikari-for-Jekyll
 
 paginate: 10
 

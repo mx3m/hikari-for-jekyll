@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "This is an awesome post about CSS"
+title:  "Awesome post about SCSS"
 date:   2014-01-02 16:57:51
 ---
 

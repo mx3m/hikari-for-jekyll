@@ -8,7 +8,7 @@ Hikari is lightweight, responsive and to some extent, beautiful.
 
 [View demo](http://m3xm.github.io/hikari-for-Jekyll)
 
-## Roadmap
+### Roadmap
 
 Hikari is currently WIP. 
 
@@ -18,19 +18,19 @@ Hikari is currently WIP.
 - Learn how to code properly 
 - Stop giving silly, unrelated japanese names to every single project I do
 
-## Development
+### Development
 
 - `master` for development and pull requests.
 - `gh-pages` for the demo page; don't bother. 
 
 
-## Author
+### Author
 
 **Mathieu Mayer-Mazzoli**
 - <https://twitter.com/mx3m>
 - <http://www.dribbble.com/m3xm>
 
 
-## License
+### License
 
 Open source. [MIT license](http://opensource.org/licenses/MIT).

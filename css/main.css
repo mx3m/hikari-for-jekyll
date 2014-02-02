@@ -69,7 +69,7 @@ header .h-wrap h1.title a:hover {
 }
 
 header .h-wrap .menu-icon {
-  margin-top: 3px;
+  margin-top: 2px;
   float: right;
   display: inline-block;
   transition: .3s;
@@ -471,6 +471,7 @@ section#single-wrap img {
   font-size: 80%;
   margin: 60px 40px 40px;
   overflow: scroll;
+  color: SlateGrey;
 }
 
 .highlight code {
@@ -484,30 +485,35 @@ section#single-wrap img {
 
 .highlight code.html::before {
   content: "HTML";
-  color: #669FE2;
 }
 
 .highlight code.css::before {
   content: "CSS";
-  color: #EAAFBD;
 }
 
 .highlight code.js::before {
   content: "JavaScript";
-  color: #7CCD2F;
 }
 
 .highlight code.html::before, 
 .highlight code.css::before,
 .highlight code.js::before {
   position: absolute;
+  color: #444;
   margin-top: -42px;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: #fbfbfb;
   border: 1px solid #eee;
   padding: 4px 10px; 
   border-radius: 3px 3px 0 0;
 }
+
+.highlight code span.nx { color: CadetBlue; }
+.highlight code span.kd { color: CornflowerBlue; }
+.highlight code span.s1 { color: HotPink; }
+.highlight code span.nt { color: SlateBlue; }
+.highlight code span.k { color: LightCoral; }
+.highlight code span.p { color: DarkSlateGray; }
 
 
 /*****************************************************************************/
@@ -527,6 +533,13 @@ section#single-wrap img {
   ul.posts li .p-wrap { padding: 30px; }
   ul.posts li .p-wrap p { display: block; }
   ul.posts li .p-wrap:hover { padding-left: 40px; }
+
+  .highlight code.html::before, 
+  .highlight code.css::before,
+  .highlight code.js::before {
+    display: none; }
+
+  .highlight { margin: 30px 40px 40px; }
 
 }
 
@@ -562,7 +575,7 @@ section#single-wrap img {
   }
 
   section#single-wrap blockquote { padding: 0 20px; border-left: 4px solid #39f; }
-  .highlight { padding: 10px 5px; margin: 60px 20px 40px; }
+  .highlight { padding: 10px 5px; margin: 30px 20px 40px; }
 
 }
 

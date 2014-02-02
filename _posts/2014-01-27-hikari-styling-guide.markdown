@@ -10,15 +10,15 @@ But I must explain to you how all this mistaken idea of denouncing pleasure and 
 
 No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
 
-* Bullet points are so cool
+* Bullet points are so fancy
 * Easy to read, they make you look like a pro
 * Even when completely random 
 
 In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
 
-1. Bullet points are so cool
-2. Easy to read, they make you look like a pro
-3. Even when completely random 
+1. Ooh, and with numbers, it's even fancier
+2. It's like 1, 2, 3, did you see?
+3. Crazy stuff all around us; scary
 
 There's nothing like a good block of code! Especially when picked randomly out of Github ([styledocco.js](https://github.com/jacobrask/styledocco/blob/master/styledocco.js)).  
 

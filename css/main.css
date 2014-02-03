@@ -162,11 +162,22 @@ header .h-wrap .close .lines::after {
 /* Off-canvas */
 
 #off-canvas {
-  display: none;
-  padding: 40px;
   position: relative;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px 40px;
   background: #fafafa;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 0px solid #f1f1f1;
+  -webkit-transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
+  transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
+}
+
+#off-canvas.toggled {
+  max-height: 90%;
+  padding: 40px;
+  border-width: 1px;
+  -webkit-transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
+  transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
 }
 
 #off-canvas #bio {
@@ -237,7 +248,7 @@ footer small {
 .icon-twitter:before {
   content: "\e002";
 }
-.icon-github:before {
+/*.icon-github:before {
   content: "\e003";
 }
 .icon-dribbble:before {
@@ -245,7 +256,7 @@ footer small {
 }
 .icon-instagram:before {
   content: "\e005";
-}
+}*/
 
 
 /*****************************************************************************/
@@ -549,7 +560,8 @@ section#single-wrap img {
   header .h-wrap { padding: 30px 20px; }
   ul.posts li .p-wrap { padding: 20px; }
   ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 20px; }
-  #off-canvas { padding: 20px; }
+  #off-canvas { padding: 0 20px; }
+  #off-canvas.toggled { padding: 20px; }
   #off-canvas #bio { width: 100%; }
   #off-canvas #avatar img { width: 120px; }
   section#single-wrap { margin: 0 auto; }

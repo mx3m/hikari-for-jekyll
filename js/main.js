@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 	// Off-canvas container toggle button
-	$(".menu-icon").click(function(){
-  		$(this).toggleClass("close");
-  		$("#off-canvas").slideToggle('fast');
+	$('.menu-icon').click(function(){
+  		$(this).toggleClass('close');
+  		$('#off-canvas').toggleClass('toggled');
 	});
 
 	// Open Twitter/share in a Pop-Up

@@ -17,6 +17,7 @@ body {
   background: #fff;
   color: #444;
   font: 20px 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
-p { margin: 1em 0;}
+p { margin: 1em 0; -webkit-font-smoothing: antialiased;}
 small { font-size: 50%; }
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
@@ -69,7 +70,6 @@ header .h-wrap h1.title a:hover {
 }
 
 header .h-wrap .menu-icon {
-  margin-top: 2px;
   float: right;
   display: inline-block;
   transition: .3s;
@@ -283,6 +283,11 @@ ul.posts li .p-wrap:active {
   background: #569BEA;
 }
 
+ul.posts li .p-wrap:hover::after {
+  content:'\2192';
+  margin-left: 10px;
+}
+
 ul.posts li .p-wrap p {
   display: inline; 
   margin-bottom: 0;
@@ -291,15 +296,6 @@ ul.posts li .p-wrap p {
 ul.posts li span.date {
   color: #2671C8;
   padding-right: 20px;
-}
-
-ul.posts li .p-wrap .arrow {
-  padding-left: 10px;
-  visibility: hidden;
-}
-
-ul.posts li .p-wrap .arrow.show {
-  visibility: visible;
 }
 
 ul.posts li a {
@@ -529,10 +525,12 @@ section#single-wrap img {
 
   body { font-size: 17px; }
   header .h-wrap { padding: 40px 30px; }
+  header .h-wrap .menu-icon { margin-top: 2px; }
   #prev, #next { display: none; } 
   ul.posts li .p-wrap { padding: 30px; }
   ul.posts li .p-wrap p { display: block; }
   ul.posts li .p-wrap:hover { padding-left: 40px; }
+  ul.posts li .p-wrap:hover::after { content: none; margin: 0; }
 
   .highlight code.html::before, 
   .highlight code.css::before,

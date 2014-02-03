@@ -6,11 +6,6 @@ $(document).ready(function(){
   		$("#off-canvas").slideToggle('fast');
 	});
 
-	// Display arrow on hover (index)
-	$(".p-wrap").hover(function(){
-  		$(this).find(".arrow").toggleClass('show');
-	});
-
 	// Open Twitter/share in a Pop-Up
 	  $('.popup').click(function(event) {
 	    var width  = 575,

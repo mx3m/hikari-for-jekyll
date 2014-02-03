@@ -10,12 +10,11 @@ Hikari is lightweight, responsive and to some extent, beautiful.
 
 ### Roadmap
 
-Hikari is currently WIP. 
+Hikari is currently WIP. *Last update - Feb 3rd, 2014.*
 
-- Remove jQuery and only use vanilla javascript for the 2/3 events which need it
-- Fix bug / three lines icon on touch devices
+- Remove jQuery dependency for the off-canvas Bio display
+- Add images caption
 - Allow users to change their bio/profile and footer text via markdown (or maybe not)
-- Learn how to code properly 
 - Stop giving silly, unrelated japanese names to every single project I do
 
 ### Development
@@ -27,7 +26,8 @@ Hikari is currently WIP.
 ### Author
 
 **Mathieu Mayer-Mazzoli**
-- <https://twitter.com/mx3m>
+- <http://m3xm.github.io>
+- <http://twitter.com/mx3m>
 - <http://www.dribbble.com/m3xm>
 
 

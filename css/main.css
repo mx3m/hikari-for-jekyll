@@ -4,7 +4,6 @@
 /*
 /*****************************************************************************/
 
-
 /* Global Reset */
 * {
   margin: 0;
@@ -168,16 +167,28 @@ header .h-wrap .close .lines::after {
   padding: 0px 40px;
   background: #fafafa;
   border-bottom: 0px solid #f1f1f1;
-  -webkit-transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
-  transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
+  -webkit-transition: max-height .25s ease, 
+                      padding-top .25s ease, 
+                      padding-bottom .25s ease, 
+                      border-width .25s ease;
+  transition:         max-height .25s ease, 
+                      padding-top .25s ease, 
+                      padding-bottom .25s ease, 
+                      border-width .25s ease;
 }
 
 #off-canvas.toggled {
   max-height: 90%;
   padding: 40px;
   border-width: 1px;
-  -webkit-transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
-  transition: max-height .25s ease, padding-top .25s ease, padding-bottom .25s ease, border-width .25s ease;
+  -webkit-transition: max-height .25s ease, 
+                      padding-top .25s ease, 
+                      padding-bottom .25s ease, 
+                      border-width .25s ease;
+  transition:         max-height .25s ease, 
+                      padding-top .25s ease, 
+                      padding-bottom .25s ease, 
+                      border-width .25s ease;
 }
 
 #off-canvas #bio {
@@ -210,16 +221,12 @@ header .h-wrap .close .lines::after {
   border-radius: 50%;
 }
 
+
 /* Footer */
 
-footer {
-  padding: 40px;
-  text-align: center;
-}
+footer { padding: 40px; text-align: center; }
+footer small { text-transform: uppercase; }
 
-footer small {
-  text-transform: uppercase;
-}
 
 /* Font-icons */
 
@@ -266,53 +273,16 @@ footer small {
 /*****************************************************************************/
 
 
-ul.posts {
-  color: #236CC1;
-  overflow: hidden;
-}
-
-ul.posts li {
-  border-bottom: 1px solid #4492EC;
-}
-
-ul.posts li:last-child {
-  border-bottom: none;
-}
-
-ul.posts li .p-wrap {
-  background: #589FF1;
-  padding: 50px 40px;
-  transition: all .15s ease-in;
-}
-
-ul.posts li .p-wrap:hover {
-  background: #67AAF7;
-  padding-left: 50px;
-}
-
-ul.posts li .p-wrap:active {
-  background: #569BEA;
-}
-
-ul.posts li .p-wrap:hover::after {
-  content:'\2192';
-  margin-left: 10px;
-}
-
-ul.posts li .p-wrap p {
-  display: inline; 
-  margin-bottom: 0;
-}
-
-ul.posts li span.date {
-  color: #2671C8;
-  padding-right: 20px;
-}
-
-ul.posts li a {
-  color: #fff;
-  text-decoration: none;
-}
+ul.posts { color: #236CC1; overflow: hidden; }
+ul.posts li { border-bottom: 1px solid #4492EC; }
+ul.posts li:last-child { border-bottom: none; }
+ul.posts li .p-wrap { background: #589FF1; padding: 50px 40px; transition: all .15s ease-in; }
+ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }
+ul.posts li .p-wrap:active { background: #569BEA; }
+ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
+ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
+ul.posts li span.date { color: #2671C8; padding-right: 20px; }
+ul.posts li a { color: #fff; text-decoration: none; }
 
 
 /*****************************************************************************/
@@ -515,13 +485,6 @@ section#single-wrap img {
   border-radius: 3px 3px 0 0;
 }
 
-.highlight code span.nx { color: CadetBlue; }
-.highlight code span.kd { color: CornflowerBlue; }
-.highlight code span.s1 { color: HotPink; }
-.highlight code span.nt { color: SlateBlue; }
-.highlight code span.k { color: LightCoral; }
-.highlight code span.p { color: DarkSlateGray; }
-
 
 /*****************************************************************************/
 /*
@@ -542,13 +505,11 @@ section#single-wrap img {
   ul.posts li .p-wrap p { display: block; }
   ul.posts li .p-wrap:hover { padding-left: 40px; }
   ul.posts li .p-wrap:hover::after { content: none; margin: 0; }
-
+  .highlight { margin: 30px 40px 40px; }
   .highlight code.html::before, 
   .highlight code.css::before,
   .highlight code.js::before {
     display: none; }
-
-  .highlight { margin: 30px 40px 40px; }
 
 }
 
@@ -585,6 +546,7 @@ section#single-wrap img {
   }
 
   section#single-wrap blockquote { padding: 0 20px; border-left: 4px solid #39f; }
+
   .highlight { padding: 10px 5px; margin: 30px 20px 40px; }
 
 }

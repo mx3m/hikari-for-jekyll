@@ -1,3 +1,12 @@
+/* 
+Title: Hikari
+Description: : A responsive & simple theme for Jekyll
+Version: 0.5
+Last update: Feb 2014
+Author: Mathieu Mayer-Mazzoli http://m3xm.github.io
+License: MIT License http://opensource.org/licenses/MIT
+*/
+
 /*****************************************************************************/
 /*
 /* Common
@@ -5,10 +14,13 @@
 /*****************************************************************************/
 
 /* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
 }
+
+/* General */
 
 html, body { width: 100%; height: 100%; }
 
@@ -24,8 +36,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
-p { margin: 1em 0; -webkit-font-smoothing: antialiased;}
+p { margin: 1em 0; }
 small { font-size: 50%; }
+p, small, blockquote { -webkit-font-smoothing: antialiased; }
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
 a         { color: #39f; }
@@ -112,8 +125,10 @@ header .h-wrap .menu-icon .lines::after {
   content: '';
   transform-origin:         50% 50%;
   -webkit-transform-origin: 50% 50%;
-  transition:         top .3s .6s ease, transform .3s ease;
-  -webkit-transition: top .3s .6s ease, transform .3s ease;
+  transition:         top .3s .6s ease, 
+                      transform .3s ease;
+  -webkit-transition: top .3s .6s ease, 
+                      transform .3s ease;
 }
 
 header .h-wrap .menu-icon .lines::before {
@@ -133,17 +148,19 @@ header .h-wrap .menu-icon:hover .lines:after {
 }
 
 header .h-wrap .close .lines {
-  transition:         background .3s 0s ease;
   -webkit-transition: background .3s 0s ease;
+  transition:         background .3s 0s ease;
   background: transparent;
 }
 
 header .h-wrap .close .lines::before,
 header .h-wrap .close .lines::after {
-  transition:         top .3s ease, transform .3s .5s ease;   
-  -webkit-transition: top .3s ease, transform .3s .5s ease;     
   top:0;
   width: 30px;
+  -webkit-transition: top .3s ease, 
+                      transform .3s .5s ease;   
+  transition:         top .3s ease, 
+                      transform .3s .5s ease;     
 }
 
 header .h-wrap .close .lines::before {
@@ -167,28 +184,28 @@ header .h-wrap .close .lines::after {
   padding: 0px 40px;
   background: #fafafa;
   border-bottom: 0px solid #f1f1f1;
-  -webkit-transition: max-height .25s ease, 
-                      padding-top .25s ease, 
-                      padding-bottom .25s ease, 
-                      border-width .25s ease;
-  transition:         max-height .25s ease, 
-                      padding-top .25s ease, 
-                      padding-bottom .25s ease, 
-                      border-width .25s ease;
+  -webkit-transition: max-height .35s ease, 
+                      padding-top .35s ease, 
+                      padding-bottom .35s ease, 
+                      border-width .35s ease;
+  transition:         max-height .35s ease, 
+                      padding-top .35s ease, 
+                      padding-bottom .35s ease, 
+                      border-width .35s ease;
 }
 
 #off-canvas.toggled {
   max-height: 90%;
   padding: 40px;
   border-width: 1px;
-  -webkit-transition: max-height .25s ease, 
-                      padding-top .25s ease, 
-                      padding-bottom .25s ease, 
-                      border-width .25s ease;
-  transition:         max-height .25s ease, 
-                      padding-top .25s ease, 
-                      padding-bottom .25s ease, 
-                      border-width .25s ease;
+  -webkit-transition: max-height .35s ease, 
+                      padding-top .35s ease, 
+                      padding-bottom .35s ease, 
+                      border-width .35s ease;
+  transition:         max-height .35s ease, 
+                      padding-top .35s ease, 
+                      padding-bottom .35s ease, 
+                      border-width .35s ease;
 }
 
 #off-canvas #bio {
@@ -509,7 +526,8 @@ section#single-wrap img {
   .highlight code.html::before, 
   .highlight code.css::before,
   .highlight code.js::before {
-    display: none; }
+    display: none; 
+  }
 
 }
 
@@ -532,7 +550,7 @@ section#single-wrap img {
 
   section#single-wrap ul,
   section#single-wrap ol {
-  padding: 10px 0 10px 35px;
+    padding: 10px 0 10px 35px;
   }
 
   section#single-wrap h1,

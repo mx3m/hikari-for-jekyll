@@ -6,14 +6,17 @@ But Hikari is also:
 
 - Simple & elegant
 - Fluid, responsive
-- Lightweight (no JS library has been abused during the development of this theme)
-- & packed with syntax highlighting for you coders
+- Lightweight (no JS library has been abused during the development of this theme thanks to my buddy [Julien](https://github.com/evarouss))
+- & packed with syntax highlighting for you coders (thanks to Jekyll & Pygments)
 
 [View demo](http://m3xm.github.io/hikari-for-Jekyll)
 
-### Roadmap
 
-Hikari is currently WIP. *Last update - Feb 4th, 2014.*
+### How to install
+
+1. Clone this repo
+2. Customize _config.yml and _includes/header.html 
+3. Publish (with Github Pages, it's free!) :) 
 
 
 ### Development

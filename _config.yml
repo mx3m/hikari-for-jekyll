@@ -4,8 +4,6 @@ description: "Fluid, responsive blog theme for Jekyll"
 url: "http://m3xm.github.io"
 baseurl: /hikari-for-Jekyll
 
-paginate: 10
-
 markdown: rdiscount
 permalink: :year/:month/:title.html
 pygments: true

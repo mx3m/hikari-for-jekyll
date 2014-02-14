@@ -290,16 +290,16 @@ footer small { text-transform: uppercase; }
 /*****************************************************************************/
 
 
-ul.posts { color: #236CC1; overflow: hidden; }
-ul.posts li { border-bottom: 1px solid #4492EC; }
-ul.posts li:last-child { border-bottom: none; }
-ul.posts li .p-wrap { background: #589FF1; padding: 50px 40px; transition: all .15s ease-in; }
-ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }
-ul.posts li .p-wrap:active { background: #569BEA; }
-ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
-ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
-ul.posts li span.date { color: #2671C8; padding-right: 20px; }
-ul.posts li a { color: #fff; text-decoration: none; }
+.posts { color: #236CC1; overflow: hidden; }
+.posts li { border-bottom: 1px solid #4492EC; }
+.posts li:last-child { border-bottom: none; }
+.posts li .p-wrap { background: #589FF1; padding: 50px 40px; transition: all .15s ease-in; }
+.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }
+.posts li .p-wrap:active { background: #569BEA; }
+.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
+.posts li .p-wrap p { display: inline; margin-bottom: 0; }
+.posts li span.date { color: #2671C8; padding-right: 20px; }
+.posts li a { color: #fff; text-decoration: none; }
 
 
 /*****************************************************************************/
@@ -309,7 +309,7 @@ ul.posts li a { color: #fff; text-decoration: none; }
 /*****************************************************************************/
 
 
-section#single-wrap {
+#single-wrap {
   width: 100%;
   max-width: 780px;
   margin: 20px auto;
@@ -318,18 +318,18 @@ section#single-wrap {
   z-index: 1;
 }
 
-section#single-wrap .single-content {
+#single-wrap .single-content {
   padding: 0 40px;
   overflow: hidden;
 }
 
-section#single-wrap .feat {
+#single-wrap .feat {
   text-align: center;
   border-bottom: 1px dotted #E0E1E6;
   margin: 0 20px 50px;
 }
 
-section#single-wrap .feat h5.page-date {
+#single-wrap .feat h5.page-date {
   display: inline-block;
   position: relative;
   top: 11px;
@@ -341,11 +341,11 @@ section#single-wrap .feat h5.page-date {
   padding: 0 20px;
 }
 
-section#single-wrap #share {
+#single-wrap #share {
   margin: 50px 20px;
 }
 
-section#single-wrap .feat a.popup {
+#single-wrap .feat a.popup {
   display: inline-block;
   position: relative;
   top: 15px;
@@ -358,7 +358,7 @@ section#single-wrap .feat a.popup {
   -webkit-transition: all .2s ease;
 }
 
-section#single-wrap h1.page-title {
+#single-wrap h1.page-title {
   font-size: 180%;
   line-height: 135%;
   font-family: 'Open Sans', sans-serif;
@@ -367,39 +367,39 @@ section#single-wrap h1.page-title {
   padding: 0 40px;
 }
 
-section#single-wrap p {
+#single-wrap p {
   padding: 0 40px;
 }
 
-section#single-wrap ul,
-section#single-wrap ol {
+#single-wrap ul,
+#single-wrap ol {
   padding: 10px 80px;
 }
 
-section#single-wrap ul li,
-section#single-wrap ol li {
+#single-wrap ul li,
+#single-wrap ol li {
   margin-bottom: 15px;
 }
 
-section#single-wrap h1,
-section#single-wrap h2,
-section#single-wrap h3,
-section#single-wrap h4,
-section#single-wrap h5,
-section#single-wrap h6 { 
+#single-wrap h1,
+#single-wrap h2,
+#single-wrap h3,
+#single-wrap h4,
+#single-wrap h5,
+#single-wrap h6 {
   padding: 0 40px; 
   margin-top: 40px;
 }
 
-section#single-wrap h1 { font-size: 150%; }
-section#single-wrap h2 { font-size: 140%; font-style: italic; }
-section#single-wrap h3 { font-size: 130%; font-weight: lighter; }
-section#single-wrap h4 { font-size: 120%; font-weight: lighter; text-decoration: underline; text-align: center; }
-section#single-wrap h5 { font-size: 110%; }
-section#single-wrap h6 { font-size: 100%; }
-section#single-wrap p { line-height: 160%; }
+#single-wrap h1 { font-size: 150%; }
+#single-wrap h2 { font-size: 140%; font-style: italic; }
+#single-wrap h3 { font-size: 130%; font-weight: lighter; }
+#single-wrap h4 { font-size: 120%; font-weight: lighter; text-decoration: underline; text-align: center; }
+#single-wrap h5 { font-size: 110%; }
+#single-wrap h6 { font-size: 100%; }
+#single-wrap p { line-height: 160%; }
 
-section#single-wrap blockquote {
+#single-wrap blockquote {
   font-size: inherit;
   font-family: 'Open Sans', sans-serif;
   color: #333;
@@ -409,12 +409,12 @@ section#single-wrap blockquote {
   line-height: 165%;
 }
 
-section#single-wrap blockquote p {
+#single-wrap blockquote p {
   padding-left: 0!important;
   padding-right: 0!important;
 }
 
-section#single-wrap img {
+#single-wrap img {
   width: 100%;
   height: 100%;
 }
@@ -518,10 +518,10 @@ section#single-wrap img {
   header .h-wrap { padding: 40px 30px; }
   header .h-wrap .menu-icon { margin-top: 2px; }
   #prev, #next { display: none; } 
-  ul.posts li .p-wrap { padding: 30px; }
-  ul.posts li .p-wrap p { display: block; }
-  ul.posts li .p-wrap:hover { padding-left: 40px; }
-  ul.posts li .p-wrap:hover::after { content: none; margin: 0; }
+  .posts li .p-wrap { padding: 30px; }
+  .posts li .p-wrap p { display: block; }
+  .posts li .p-wrap:hover { padding-left: 40px; }
+  .posts li .p-wrap:hover::after { content: none; margin: 0; }
   .highlight { margin: 30px 40px 40px; }
   .highlight code.html::before, 
   .highlight code.css::before,
@@ -537,33 +537,33 @@ section#single-wrap img {
 
   body { font-size: 15px; }
   header .h-wrap { padding: 30px 20px; }
-  ul.posts li .p-wrap { padding: 20px; }
-  ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 20px; }
+  .posts li .p-wrap { padding: 20px; }
+  .posts li .p-wrap:hover { background: #67AAF7; padding-left: 20px; }
   #off-canvas { padding: 0 20px; }
   #off-canvas.toggled { padding: 20px; }
   #off-canvas #bio { width: 100%; }
   #off-canvas #avatar img { width: 120px; }
-  section#single-wrap { margin: 0 auto; }
-  section#single-wrap .single-content { padding: 0 20px; }
-  section#single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }
-  section#single-wrap p { padding: 0 20px; }
+  #single-wrap { margin: 0 auto; }
+  #single-wrap .single-content { padding: 0 20px; }
+  #single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }
+  #single-wrap p { padding: 0 20px; }
 
-  section#single-wrap ul,
-  section#single-wrap ol {
+  #single-wrap ul,
+  #single-wrap ol {
     padding: 10px 0 10px 35px;
   }
 
-  section#single-wrap h1,
-  section#single-wrap h2,
-  section#single-wrap h3,
-  section#single-wrap h4,
-  section#single-wrap h5,
-  section#single-wrap h6 { 
+  #single-wrap h1,
+  #single-wrap h2,
+  #single-wrap h3,
+  #single-wrap h4,
+  #single-wrap h5,
+  #single-wrap h6 {
     padding: 0 20px; 
     margin-top: 30px;
   }
 
-  section#single-wrap blockquote { padding: 0 20px; border-left: 4px solid #39f; }
+  #single-wrap blockquote { padding: 0 20px; border-left: 4px solid #39f; }
 
   .highlight { padding: 10px 5px; margin: 30px 20px 40px; }
 

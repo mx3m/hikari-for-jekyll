@@ -7,3 +7,7 @@ baseurl: /hikari-for-Jekyll
 markdown: rdiscount
 permalink: :year/:month/:title.html
 pygments: true
+
+# Google Analytics
+ga_domain: m3xm.github.io
+ga_tracking_id: UA-47727049-1

@@ -1,6 +1,8 @@
 name: "hikari"
 description: "Fluid, responsive blog theme for Jekyll"
 
+author: "John Doge"
+
 url: "http://m3xm.github.io"
 baseurl: /hikari-for-Jekyll
 

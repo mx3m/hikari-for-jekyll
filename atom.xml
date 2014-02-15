@@ -1,0 +1,27 @@
+---
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.name }}</title>
+  <id>{{ site.url }}</id>
+  <link href="{{ site.url }}" />
+  <link href="{{ site.url }}/atom.xml" rel="self" />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <rights>Copyright 2014, {{ site.author }}</rights>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
+  {% for post in site.posts %}
+    <entry>
+      <title>{{ post.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ post.url }}" />
+      <summary type="html">{{ post.content | xml_escape }}</summary>
+      <id>{{ site.url }}{{ post.url }}</id>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <author>
+        <name>{{ site.author }}</name>
+      </author>
+    </entry>
+  {% endfor %}
+</feed>

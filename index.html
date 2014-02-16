@@ -6,9 +6,17 @@ title: Homepage
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
-      <li>
-      	<a href="{{ site.baseurl }}{{ post.url }}"><div class="p-wrap"><span class="date">{{ post.date | date_to_string }}</span> <p>{{ post.title }}</p></div></a>
-	  </li>
+      <li itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+          <div class="p-wrap">
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="date"
+                itemprop="datePublished">
+              {{ post.date | date_to_string }}
+            </time>
+            <p itemprop="name headline">{{ post.title }}</p>
+          </div>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </div>

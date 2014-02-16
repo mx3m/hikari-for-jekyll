@@ -298,7 +298,7 @@ ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }
 ul.posts li .p-wrap:active { background: #569BEA; }
 ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
 ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
-ul.posts li span.date { color: #2671C8; padding-right: 20px; }
+ul.posts li .date { color: #2671C8; padding-right: 20px; }
 ul.posts li a { color: #fff; text-decoration: none; }
 
 

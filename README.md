@@ -15,14 +15,26 @@ But Hikari is also:
 ### How to install
 
 1. Clone this repo
-2. Customize _config.yml and _includes/header.html 
-3. Publish (with Github Pages, it's free!) :) 
+2. Customize \_config.yml and \_includes/header.html
+3. Publish (with Github Pages, it's free!) :)
 
 
 ### Development
 
 - `master` for development and pull requests.
-- `gh-pages` for the demo page; don't bother. 
+- `gh-pages` for the demo page; don't bother.
+
+
+#### Running locally
+
+1. Clone this repo
+2. Install required dependencies with [Bundler](http://bundler.io/)
+
+        bundle install
+3. Run the site with Jekyll
+
+        bundle exec jekyll serve --watch
+4. Visit the site at [http://localhost:4000](http://localhost:4000)
 
 
 ### Author

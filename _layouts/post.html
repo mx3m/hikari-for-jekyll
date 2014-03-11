@@ -1,4 +1,6 @@
-{% include header.html %}
+---
+layout: default
+---
 
 {% if page.previous %} 
   <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">&larr;</a>
@@ -27,5 +29,3 @@
     </div>
   </article>
 </section>
-
-{% include footer.html %}

@@ -44,7 +44,7 @@ But Hikari is also:
 - <http://twitter.com/mx3m>
 - <http://www.dribbble.com/m3xm>
 
-## Main Contributors
+### Main Contributors
 
 **Ross Allen**
 - <https://github.com/ssorallen>

@@ -4,7 +4,7 @@ description: "Fluid, responsive blog theme for Jekyll"
 author: "John Doge"
 
 url: "http://m3xm.github.io"
-baseurl: ""
+baseurl: "/hikari-for-Jekyll"
 
 markdown: rdiscount
 permalink: :year/:month/:title.html

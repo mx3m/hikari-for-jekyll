@@ -8,23 +8,38 @@ window.onload = function() {
     $menuIcon.addEventListener('click', function() {
         toggleClass($menuIcon, 'close');
         toggleClass($offCanva, 'toggled');
+        removeClass($menuIcon, 'hover');
     }, false);
+
+    $menuIcon.addEventListener('mouseenter', function() {
+        addClass($menuIcon, 'hover');
+    });
+
+    $menuIcon.addEventListener('mouseleave', function() {
+        removeClass($menuIcon, 'hover');
+    });
+
+    function addClass(element, className) {
+        element.className += " " + className;
+    }
+
+    function removeClass(element, className) {
+        // Capture any surrounding space characters to prevent repeated
+        // additions and removals from leaving lots of spaces.
+        var classNameRegEx = new RegExp("\\s*" + className + "\\s*");
+        element.className = element.className.replace(classNameRegEx, " ");
+    }
 
     function toggleClass(element, className) {
         if (!element || !className) {
             return;
         }
 
-        var classString = element.className,
-            nameIndex = classString.indexOf(className);
-
-        if (nameIndex == -1) {
-            classString += ' ' + className;
+        if (element.className.indexOf(className) === -1) {
+            addClass(element, className);
+        } else {
+            removeClass(element, className);
         }
-        else {
-            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
-        }
-        element.className = classString;
     }
 
     // Open Twitter/share in a Pop-Up

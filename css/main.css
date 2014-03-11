@@ -139,11 +139,11 @@ header .h-wrap .menu-icon .lines::after {
   top: -10px;
 }
 
-header .h-wrap .menu-icon:hover .lines:before {
+header .h-wrap .menu-icon.hover .lines:before {
   top: -0.0219rem;
 }
 
-header .h-wrap .menu-icon:hover .lines:after {
+header .h-wrap .menu-icon.hover .lines:after {
   top: 0.0219rem;
 }
 

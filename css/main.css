@@ -529,7 +529,8 @@ section#single-wrap img {
     position: static;
   }
 
-  #next { float: right; }
+  #next { float: right; margin-right: 20px; }
+  #prev { margin-left: 20px; }
   .nav-title { display: inline; }
 
   ul.posts li .p-wrap { padding: 30px; }

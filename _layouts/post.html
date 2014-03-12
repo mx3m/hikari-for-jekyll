@@ -2,13 +2,6 @@
 layout: default
 ---
 
-{% if page.previous %} 
-  <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">&larr;</a>
-{% endif %}
-{% if page.next %} 
-  <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">&rarr;</a>
-{% endif %}
-
 <section id="single-wrap">
   <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="feat">
@@ -27,5 +20,15 @@ layout: default
         <span class="icon-twitter"></span>
       </a>
     </div>
+    {% if page.next %}
+      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+        <span class="nav-title nav-title-next">newer</span> &rarr;
+      </a>
+    {% endif %}
+    {% if page.previous %}
+      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+        &larr; <span class="nav-title nav-title-prev">older</span>
+      </a>
+    {% endif %}
   </article>
 </section>

@@ -44,6 +44,14 @@ But Hikari is also:
 - <http://twitter.com/mx3m>
 - <http://www.dribbble.com/m3xm>
 
+### Main Contributors
+
+**Ross Allen**
+- <https://github.com/ssorallen>
+
+**Julien Rousseau**
+- <https://github.com/evarouss>
+
 
 ### License
 

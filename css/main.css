@@ -291,7 +291,7 @@ footer small { text-transform: uppercase; }
 
 
 ul.posts { color: #236CC1; overflow: hidden; }
-ul.posts li { border-bottom: 1px solid #4492EC; }
+ul.posts li { border-bottom: 1px solid #4492EC; display: inline-block; width: 100%; }
 ul.posts li:last-child { border-bottom: none; }
 ul.posts li .p-wrap { background: #589FF1; padding: 50px 40px; transition: all .15s ease-in; }
 ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }

@@ -10,6 +10,9 @@ markdown: rdiscount
 permalink: :year/:month/:title.html
 pygments: true
 
+paginate: 10
+paginate_path: "/page/:num"
+
 # Google Analytics
 ga_domain: m3xm.github.io
 ga_tracking_id: UA-47727049-1

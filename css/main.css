@@ -1,9 +1,9 @@
 /* 
 Title: Hikari
 Description: : A responsive & simple theme for Jekyll
-Version: 1.0
-Last update: Feb 2014
-Author: Mathieu Mayer-Mazzoli http://m3xm.github.io
+Version: 1.1
+Last update: June 2014
+Original Author: Mathieu Mayer-Mazzoli http://m3xm.github.io
 License: MIT License http://opensource.org/licenses/MIT
 */
 
@@ -533,6 +533,8 @@ section#single-wrap img {
   #prev { float: left; margin-left: 20px; }
   .nav-title { display: inline; }
 
+  section#single-wrap .single-content { padding: 0 10px; }
+
   ul.posts li .p-wrap { padding: 30px; }
   ul.posts li .p-wrap p { display: block; }
   ul.posts li .p-wrap:hover { padding-left: 40px; }
@@ -546,9 +548,9 @@ section#single-wrap img {
 
 }
 
-/* Viewport width < 480px */
+/* Viewport width < 540px */
 
-@media only screen and (max-width : 479px) {
+@media only screen and (max-width : 539px) {
 
   body { font-size: 15px; }
   header .h-wrap { padding: 30px 20px; }
@@ -559,7 +561,7 @@ section#single-wrap img {
   #off-canvas #bio { width: 100%; }
   #off-canvas #avatar img { width: 120px; }
   section#single-wrap { margin: 0 auto; }
-  section#single-wrap .single-content { padding: 0 20px; }
+  section#single-wrap .single-content { padding: 0 5px; }
   section#single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }
   section#single-wrap p { padding: 0 20px; }
 

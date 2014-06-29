@@ -23,19 +23,17 @@ title: Homepage
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a rel="prev" href="/page/{{paginator.next_page}}" id="prev-fixed">
-      &larr; <span class="nav-title nav-title-prev">older</span>
-    </a>
+    <a href="/page/{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a rel="next" href="/" id="next-fixed">
-        <span class="nav-title nav-title-next">newer</span> &rarr;
-      </a>
+      <a href="/" class="newer">Newer</a>
     {% else %}
-      <a rel="next" href="/page/{{paginator.previous_page}}" id="next-fixed">
-        <span class="nav-title nav-title-next">newer</span> &rarr;
-      </a>
+      <a href="/page/{{paginator.previous_page}}" class="newer">Newer</a>
     {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
   {% endif %}
 </div>

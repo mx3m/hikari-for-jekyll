@@ -21,6 +21,7 @@ title: Homepage
   </ul>
 </div>
 
+{% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.next_page %}
     <a href="/page/{{paginator.next_page}}" class="older">Older</a>
@@ -37,3 +38,4 @@ title: Homepage
     <span class="previous">Newer</span>
   {% endif %}
 </div>
+{% endif %}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  color: #444;
+  font: 1.25em 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  @media (max-width: 942px) {
+    font-size: 1.15em; 
+  }
+  @media (max-width: 642px) {
+    font-size: .9em; 
+  }
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+p { 
+  margin: 1em 0; 
+}
+
+small { 
+  font-size: 50%; 
+}
+
+ul li { list-style-type: circle; }
+ol li { list-style-type: decimal; }
+
+a { 
+  color: #39f; 
+  &:hover {
+    color: #444;
+  }
+}
+
+
+/*****************************************************************************/
+/*
+/* Media Queries
+/*
+/*****************************************************************************/
+
+
+/* Viewport width < 920px */
+
+@media only screen and (max-width : 919px) {
+
+  header .h-wrap { padding: 40px 30px; }
+  header .h-wrap .menu-icon { margin-top: 2px; }
+
+  #next,
+  #prev {
+    position: static;
+  }
+
+  #next { float: right; margin-right: 20px; }
+  #prev { float: left; margin-left: 20px; }
+  .nav-title { display: inline; }
+
+  section#single-wrap .single-content { padding: 0 10px; }
+
+  ul.posts li .p-wrap { padding: 30px; }
+  ul.posts li .p-wrap p { display: block; }
+  ul.posts li .p-wrap:hover { padding-left: 40px; }
+  ul.posts li .p-wrap:hover::after { content: none; margin: 0; }
+
+}
+
+/* Viewport width < 540px */
+
+@media only screen and (max-width : 539px) {
+
+  header .h-wrap { padding: 30px 20px; }
+  ul.posts li .p-wrap { padding: 20px; }
+  ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 20px; }
+  #off-canvas { padding: 0 20px; }
+  #off-canvas.toggled { padding: 20px; }
+  #off-canvas #bio { width: 100%; }
+  #off-canvas #avatar img { width: 120px; }
+  section#single-wrap { margin: 0 auto; }
+  section#single-wrap .single-content { padding: 0 5px; }
+  section#single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }
+  section#single-wrap p { padding: 0 20px; }
+
+  section#single-wrap ul,
+  section#single-wrap ol {
+    padding: 10px 0 10px 35px;
+  }
+
+  section#single-wrap h1,
+  section#single-wrap h2,
+  section#single-wrap h3,
+  section#single-wrap h4,
+  section#single-wrap h5,
+  section#single-wrap h6 { 
+    padding: 0 20px; 
+    margin-top: 30px;
+  }
+
+  section#single-wrap blockquote { padding: 0 20px; border-left: 4px solid #39f; }
+
+}

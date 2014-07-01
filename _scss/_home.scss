@@ -1,0 +1,42 @@
+.posts { 
+  color: #236CC1; 
+  overflow: hidden;
+  li { 
+    display: inline-block; 
+    width: 100%; 
+    border-bottom: 1px solid #4492EC; 
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .p-wrap {
+      background: #589FF1; 
+      padding: 50px 40px; 
+      transition: all .15s ease-in;
+      &:active { background: #569BEA; }
+      &:hover {
+        background: #67AAF7; 
+        padding-left: 50px;
+        &::after {
+          content:'\2192'; 
+          margin-left: 10px;
+        }
+      }
+      p {
+        display: inline;
+        margin-bottom: 0; 
+      }
+    } // end .p-wrap
+
+    .date {
+      color: #2671C8; 
+      padding-right: 20px;
+    }
+
+    a {
+      color: #fff; 
+      text-decoration: none;
+    }
+
+  } // end li
+} // end .posts

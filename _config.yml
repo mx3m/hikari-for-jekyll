@@ -6,10 +6,16 @@ author: "John Doge"
 url: "http://m3xm.github.io"
 baseurl: ""
 
-markdown: rdiscount
-permalink: :year/:month/:title.html
-pygments: true
+markdown: kramdown
+permalink: pretty
+highlighter: true
 
-# Google Analytics
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+# Google Analytics (you may want to changes these with yours or even delete :)
 ga_domain: m3xm.github.io
 ga_tracking_id: UA-47727049-1

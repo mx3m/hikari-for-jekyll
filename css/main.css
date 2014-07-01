@@ -258,6 +258,39 @@ footer small { text-transform: uppercase; }
   font-style: normal;
 }
 
+/*
+ *  Font Awesome 3.2.1
+ *  the iconic font designed for Bootstrap
+ *  ------------------------------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation can be
+ *  found at http://fontawesome.io.  Stay up to date on Twitter at
+ *  http://twitter.com/fontawesome.
+ *
+ *  License
+ *  ------------------------------------------------------------------------------
+ *  - The Font Awesome font is licensed under SIL OFL 1.1 -
+ *    http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - Font Awesome documentation licensed under CC BY 3.0 -
+ *    http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fontawesome.io"
+ *
+ *  Author - Dave Gandy
+ *  ------------------------------------------------------------------------------
+ *  Email: dave@fontawesome.io
+ *  Twitter: http://twitter.com/byscuits
+ *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/fonts/fontawesome-webfontf.eot?');
+  src: url('../assets/fonts/fontawesome-webfontd.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .icon-twitter, .icon-github, .icon-dribbble, .icon-instagram {
   font-family: 'icomoon';
   speak: none;
@@ -267,6 +300,24 @@ footer small { text-transform: uppercase; }
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+}
+
+.icon-quote-left, .icon-quote-right {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-quote-right:before {
+  content: "\f10e";
+}
+.icon-quote-left:before {
+  content: "\f10d";
 }
 
 .icon-twitter:before {
@@ -298,7 +349,13 @@ ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 50px; }
 ul.posts li .p-wrap:active { background: #569BEA; }
 ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
 ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
-ul.posts li .date { color: #2671C8; padding-right: 20px; }
+ul.posts li .p-wrap .date { color: #2671C8; padding-right: 20px; }
+ul.posts li .s-wrap { background: #589FF1; text-align: center; font-size: 58px; font-weight:lighter; padding: 50px; }
+ul.posts li .s-wrap:hover { background: #67AAF7; }
+ul.posts li .s-wrap:active { background: #569BEA; }
+/*ul.posts li .s-wrap:hover::after { content:'\2192'; margin-left: 10px; }*/
+ul.posts li .s-wrap p { display: inline; margin-bottom: 0; }
+/*ul.posts li .s-wrap .date { color: #2671C8; margin-top: 10px; display: block;}*/
 ul.posts li a { color: #fff; text-decoration: none; }
 
 

@@ -10,6 +10,9 @@ markdown: kramdown
 permalink: pretty
 highlighter: true
 
+paginate: 10
+paginate_path: "/page/:num"
+
 # SCSS
 
 sass:
@@ -17,5 +20,6 @@ sass:
   style: :compressed
 
 # Google Analytics (you may want to changes these with yours or even delete :)
+
 ga_domain: m3xm.github.io
 ga_tracking_id: UA-47727049-1

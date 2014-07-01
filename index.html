@@ -6,17 +6,28 @@ title: Homepage
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
-      <li itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-          <div class="p-wrap">
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="date"
-                itemprop="datePublished">
-              {{ post.date | date_to_string }}
-            </time>
-            <p itemprop="name headline">{{ post.title }}</p>
-          </div>
-        </a>
-      </li>
+      {% if post.type == 'status' %}
+        <li itemscope itemtype="http://schema.org/BlogPosting">
+          <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+            <div class="s-wrap">
+              <i class="icon-quote-left"></i>
+              <p itemprop="status content">{{ post.excerpt | strip_html }}</p>
+            </div>
+          </a>
+        </li>
+      {% else %}
+        <li itemscope itemtype="http://schema.org/BlogPosting">
+          <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+            <div class="p-wrap">
+              <time datetime="{{ post.date | date_to_xmlschema }}" class="date"
+                  itemprop="datePublished">
+                {{ post.date | date_to_string }}
+              </time>
+              <p itemprop="name headline">{{ post.title }}</p>
+            </div>
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

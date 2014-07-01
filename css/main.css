@@ -461,6 +461,32 @@ section#single-wrap img {
   display: inline;
 }
 
+.pagination {
+  overflow: hidden;
+  margin-top: 40px;
+  color: #ccc;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.pagination a,
+.pagination span {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  text-decoration: none;
+}
+.pagination a:first-child,
+.pagination span:first-child {
+  text-decoration: none;
+  border-right: 1px solid #eee;
+}
+.pagination a:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
 /* highlights */
 
 .highlight {
@@ -585,3 +611,4 @@ section#single-wrap img {
   .highlight { padding: 10px 5px; margin: 30px 20px 40px; }
 
 }
+

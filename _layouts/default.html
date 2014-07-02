@@ -12,7 +12,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css" />
-      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/syntax.css" />
       <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
   </head>
 
@@ -27,24 +26,39 @@
       </div>
       <div id="bio">
           <h1>Hi, I'm {{ site.author }}.</h1>
-          <p>I'm a developer, living in Paris, France and this is my personal blog. I share things on <a href="">Github</a>, flex my design muscles on <a href="">Dribbble</a>, share stupid thoughts on <a href="">Twitter</a>. Shoot me an <a href="mailto:">email</a> if you'd like to be in touch.</p>
+          <p>I'm a dog. I develop things. This is my blog so why don't you close this damn side panel (cursed by most UX Designers but I don't care, I do whatever I want) and start reading my awesome stuff?</p>
       </div>
+      <nav>
+        <h6>Follow me on</h6>
+        <ul>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Github</a></li>
+          <li><a href="">Dribbble</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <header>
-      <div class="h-wrap">
-        <h1 class="title"><a href="{{ site.baseurl }}" title="Back to Homepage">{{ site.name }}</a></h1>
-        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
-      </div>
-    </header>
 
-    <main>
-      {{ content }}
-    </main>
+    <div id="site-wrapper">
 
-    <footer>
-      <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small>
-    </footer>
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="{{ site.baseurl }}" title="Back to Homepage">{{ site.name }}</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small>
+      </footer>
+
+    </div> 
+    <!-- site-wrapper -->
 
     <script src="{{ site.baseurl }}/js/main.js"></script>
     {% comment %} Google Analytics {% endcomment %}

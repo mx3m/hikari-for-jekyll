@@ -9,18 +9,19 @@
 // License: MIT License http://opensource.org/licenses/MIT
 
 // Base
-@import 'reset';
-@import 'variables';
-@import 'global';
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/global';
 
 // Components
-@import 'icons';
-@import 'syntax';
+@import 'components/icons';
+@import 'components/syntax';
 
 // Partials
-@import 'header';
-@import 'footer';
+@import 'partials/header';
+@import 'partials/footer';
 
 // Pages
-@import 'home';
-@import 'posts';
+@import 'pages/home';
+@import 'pages/posts';

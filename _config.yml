@@ -8,7 +8,7 @@ baseurl: ""
 
 markdown: kramdown
 permalink: pretty
-highlighter: true
+highlighter: pygments
 
 paginate: 10
 paginate_path: "/page/:num"

@@ -1,14 +1,13 @@
-//TODO: implement an equivalent to $(document.ready)
-//window.onload will do the job for now.
 window.onload = function() {
 
-    var $menuIcon = document.getElementsByClassName("menu-icon")[0],
+    var $menuIcon = document.getElementsByClassName('menu-icon')[0],
         $offCanva = document.getElementById('off-canvas');
+        $siteWrap = document.getElementById('site-wrapper');
 
     $menuIcon.addEventListener('click', function() {
         toggleClass($menuIcon, 'close');
         toggleClass($offCanva, 'toggled');
-        removeClass($menuIcon, 'hover');
+        toggleClass($siteWrap, 'open');
     }, false);
 
     $menuIcon.addEventListener('mouseenter', function() {
@@ -16,6 +15,11 @@ window.onload = function() {
     });
 
     $menuIcon.addEventListener('mouseleave', function() {
+        removeClass($menuIcon, 'hover');
+    });
+
+
+    $menuIcon.addEventListener('click', function() {
         removeClass($menuIcon, 'hover');
     });
 
@@ -43,7 +47,7 @@ window.onload = function() {
     }
 
     // Open Twitter/share in a Pop-Up
-    var $popup = document.getElementsByClassName("popup")[0];
+    var $popup = document.getElementsByClassName('popup')[0];
     if (!$popup) {
         return;
     }

@@ -1,0 +1,20 @@
+%transition {
+  transition: all .3s ease;
+}
+
+%padding-regular {
+  padding: $spacing-s;
+}
+
+%padding-large {
+  padding: $spacing-m;
+}
+
+%padding-content {
+  padding-left: $spacing-m;
+  padding-right: $spacing-m;
+  @media (max-width: 642px) {
+    padding-left: $spacing-s;
+    padding-right: $spacing-s;
+  }
+}

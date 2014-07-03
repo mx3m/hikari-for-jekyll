@@ -38,34 +38,38 @@ h6 {
 
 h1 { 
   font-size: 250%; 
+  margin: $spacing-xs 0;
 }
 
 h2 { 
   font-size: 180%; 
   font-style: italic; 
+  margin: $spacing-s 0 $spacing-xs;
 }
 
 h3 { 
   font-size: 150%; 
   font-weight: lighter; 
+  margin: $spacing-sm 0 $spacing-xs;
 }
 
 h4 { 
-  font-size: 120%; 
-  font-weight: lighter;
-  text-decoration: underline; 
-  text-align: center;
+  font-size: 80%; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 3px;
+  margin: $spacing-l 0 $spacing-xs;
+  color: lighten($text-color, 40%);
 }
 
 h5 { 
-  font-size: 100%; 
-  font-weight: bold;
+  @extend h4;
+  text-align: center;
 }
 
 h6 { 
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 3px; 
+  @extend h4;
+  text-align: right;
 }
 
 p { 

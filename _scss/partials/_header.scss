@@ -111,7 +111,7 @@ header {
 
 // Off-canvas
 
-#site-wrapper {
+.site-wrapper {
   @extend %transition;
   position: absolute;
   top: 0;
@@ -124,7 +124,7 @@ header {
   }
 }
 
-#off-canvas {
+.off-canvas {
   @extend %transition;
   @extend %padding-large;
   position: fixed;
@@ -146,7 +146,7 @@ header {
     border-left: 1px solid $border-color;
   }
 
-  #avatar {
+  .avatar {
     display: block;
     margin-bottom: $spacing-s;
     img {
@@ -154,10 +154,10 @@ header {
       height: 6em;
       border-radius: 50%;
     }
-  } // end #avatar
+  } // end .avatar
 
 
-  #bio {
+  .bio {
     display: block;
     h1 {
       @extend h3;
@@ -190,9 +190,4 @@ header {
     }
   }
 
-} // end #off-canvas
-
-
-
-
-
+} // end .off-canvas

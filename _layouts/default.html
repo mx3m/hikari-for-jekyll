@@ -20,27 +20,35 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="off-canvas">
-      <div id="avatar">
-        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">
-      </div>
-      <div id="bio">
+    <div class="off-canvas">
+      <figure class="avatar">
+        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
+      </figure>
+      <div class="bio">
           <h1>Hi, I'm {{ site.author }}.</h1>
-          <p>I'm a dog. I develop things. This is my blog so why don't you close this damn side panel (cursed by most UX Designers but I don't care, I do whatever I want) and start reading my awesome stuff?</p>
+          <p>{{ site.author-bio }}</p>
       </div>
       <nav>
         <h6>Follow me on</h6>
         <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Github</a></li>
-          <li><a href="">Dribbble</a></li>
-          <li><a href="">Instagram</a></li>
+          {% if site.twitter %}
+          <li><a target="_blank" href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
+          {% endif %}
+          {% if site.github %}
+          <li><a target="_blank" href="">Github</a></li>
+          {% endif %}
+          {% if site.dribbble %}
+          <li><a target="_blank" href="">Dribbble</a></li>
+          {% endif %}
+          {% if site.instagram %}
+          <li><a target="_blank" href="">Instagram</a></li>
+          {% endif %}
         </ul>
       </nav>
     </div>
 
 
-    <div id="site-wrapper">
+    <div class="site-wrapper">
 
       <header>
         <div class="h-wrap">
@@ -58,7 +66,7 @@
       </footer>
 
     </div> 
-    <!-- site-wrapper -->
+    {% comment %} site-wrapper {% endcomment %}
 
     <script src="{{ site.baseurl }}/js/main.js"></script>
     {% comment %} Google Analytics {% endcomment %}

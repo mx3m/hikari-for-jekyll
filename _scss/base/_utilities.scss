@@ -9,12 +9,3 @@
 %padding-large {
   padding: $spacing-m;
 }
-
-%padding-content {
-  padding-left: $spacing-m;
-  padding-right: $spacing-m;
-  @media (max-width: 642px) {
-    padding-left: $spacing-s;
-    padding-right: $spacing-s;
-  }
-}

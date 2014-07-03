@@ -2,12 +2,12 @@
 // https://gist.github.com/edwardhotchkiss/2005058
 
 .highlight { 
-  border: 1px solid #eee;
+  border: 1px solid $border-color;
   border-radius: 3px;
-  padding: 10px 25px;
+  padding: $spacing-s $spacing-s;
   background-color: $smoke-color;
   font-size: 80%;
-  margin: $spacing-m $spacing-sm;
+  margin: $spacing-m auto;
   overflow: scroll;
   color: lighten($text-color, 30%);
 }

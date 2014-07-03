@@ -1,12 +1,13 @@
-section#single-wrap {
+.single-wrap {
   width: 100%;
-  max-width: 820px;
+  max-width: 740px;
   margin: $spacing-s auto;
   font-family: $variant-family;
   background: white;
   z-index: 1;
+
   .single-content {
-    @extend %padding-content;
+    padding: 0 $spacing-m;
     @media (max-width: 642px) {
       padding-bottom: $spacing-l;
     }
@@ -15,7 +16,7 @@ section#single-wrap {
   .feat {
     text-align: center;
     border-bottom: 1px dotted $border-color;
-    margin: 0 $spacing-sm $spacing-l;
+    margin: 0 auto $spacing-l;
     a.popup {
       display: inline-block;
       position: relative;
@@ -33,10 +34,10 @@ section#single-wrap {
     }
   }
 
-  h5.page-date {
+  .page-date {
     display: inline-block;
     position: relative;
-    top: 11px;
+    top: $spacing-s;
     background: $bg-color;
     font-family: $variant-family;
     font-size: 85%;
@@ -44,14 +45,14 @@ section#single-wrap {
     font-weight: normal;
     font-style: italic;
     padding: 0 $spacing-s;
+    text-transform: none;
   }
 
-  #share {
-    margin: $spacing-l $spacing-sm;
+  .share {
+    margin: $spacing-l auto;
   }
 
   h1.page-title {
-    @extend %padding-content;
     font-size: 180%;
     line-height: 135%;
     font-family: $font-family;
@@ -59,26 +60,9 @@ section#single-wrap {
     margin: 0 0 $spacing-m;
   }
 
-  h1, 
-  h2, 
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: $spacing-s;
-    margin-bottom: 0;
-    @media (max-width: 642px) {
-      text-align: center;
-    }
-  }
-  
-  p {
-    @extend %padding-content;
-  }
-
   ul, 
   ol {
-    padding: $spacing-s $spacing-m;
+    margin: $spacing-m 0;
     li {
       margin-bottom: $spacing-xs;
     }
@@ -90,10 +74,10 @@ section#single-wrap {
     font-weight: lighter;
     color: lighten($text-color, 40%);
     border-left: 4px solid $main-color;
-    padding: 0 0 0 $spacing-s;
+    padding-left: $spacing-s;
     margin-top: $spacing-m;
     margin-bottom: $spacing-m;
-    margin-left: -$spacing-m;
+    margin-left: -$spacing-l;
     margin-right: 0;
     line-height: 165%;
 

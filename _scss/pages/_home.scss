@@ -11,7 +11,7 @@
 
     .p-wrap {
       padding: $spacing-ml $spacing-m;
-      background: #589FF1; 
+      background: $main-color; 
       transition: all .15s ease-in;
       &:active { 
         background: darken($main-color, 3%);

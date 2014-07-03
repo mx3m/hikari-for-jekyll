@@ -1,8 +1,8 @@
 window.onload = function() {
 
     var $menuIcon = document.getElementsByClassName('menu-icon')[0],
-        $offCanva = document.getElementById('off-canvas');
-        $siteWrap = document.getElementById('site-wrapper');
+        $offCanva = document.getElementsByClassName('off-canvas')[0];
+        $siteWrap = document.getElementsByClassName('site-wrapper')[0];
 
     $menuIcon.addEventListener('click', function() {
         toggleClass($menuIcon, 'close');
@@ -15,11 +15,6 @@ window.onload = function() {
     });
 
     $menuIcon.addEventListener('mouseleave', function() {
-        removeClass($menuIcon, 'hover');
-    });
-
-
-    $menuIcon.addEventListener('click', function() {
         removeClass($menuIcon, 'hover');
     });
 

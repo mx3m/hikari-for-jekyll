@@ -1,13 +1,16 @@
 # hikari
 
-Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for bloggers and developers who want the best of both worlds: sharing snippets and stories/pictures of their latest vacation in Tokyo (that's just for the example, you may want to go to Kyoto too). 
+Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-savvy bloggers who wants to get started with Jekyll in a very minimal way. 
 
-But Hikari is also:
+- SCSS!
+- Responsive
+- Lightweight (no JS library has been abused here)
 
-- Simple & elegant
-- Fluid, responsive
-- Lightweight (no JS library has been abused during the development of this theme thanks to my buddy [Julien](https://github.com/evarouss))
-- & packed with syntax highlighting for you coders (thanks to Jekyll & Pygments)
+![preview](https://www.dropbox.com/s/qvv8b61jbmt7hv3/hikari-screenshot.png)
+
+![preview](https://www.dropbox.com/s/dx1c0bfycfw7znn/hikari-screenshot-2.png)
+
+![preview](https://www.dropbox.com/s/h8rocl6yw32yuek/hikari-screenshot-3.png)
 
 [View demo](http://m3xm.github.io/hikari-for-Jekyll)
 
@@ -15,8 +18,8 @@ But Hikari is also:
 ### How to install
 
 1. Clone this repo
-2. Customize \_config.yml and \_includes/header.html
-3. Publish (with Github Pages, it's free!) :)
+2. Customize \_config.yml and delete all dummy posts
+3. Publish ([https://help.github.com/articles/using-jekyll-with-pages](I recommend GitHub pages, it's free))
 
 
 ### Development

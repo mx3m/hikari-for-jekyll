@@ -37,7 +37,7 @@
   .page-date {
     display: inline-block;
     position: relative;
-    top: $spacing-s;
+    top: 1.1em;
     background: $bg-color;
     font-family: $variant-family;
     font-size: 85%;
@@ -46,6 +46,7 @@
     font-style: italic;
     padding: 0 $spacing-s;
     text-transform: none;
+    letter-spacing: 1px;
   }
 
   .share {

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: $font-size-l $font-family;
+  color: $text-color;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: $bg-color;
+  @media (max-width: 942px) {
+    font-size: $font-size-m; 
+  }
+  @media (max-width: 642px) {
+    font-size: $font-size-s; 
+  }
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 { 
+  font-size: 250%; 
+  margin: $spacing-xs 0;
+}
+
+h2 { 
+  font-size: 180%; 
+  font-style: italic; 
+  margin: $spacing-s 0 $spacing-xs;
+}
+
+h3 { 
+  font-size: 150%; 
+  font-weight: lighter; 
+  margin: $spacing-sm 0 $spacing-xs;
+}
+
+h4 { 
+  font-size: 80%; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 3px;
+  margin: $spacing-l 0 $spacing-xs;
+  color: lighten($text-color, 40%);
+}
+
+h5 { 
+  @extend h4;
+  text-align: center;
+}
+
+h6 { 
+  @extend h4;
+  text-align: right;
+}
+
+p { 
+  margin: 1.3em 0; 
+  line-height: 1.6;
+}
+
+small { 
+  font-size: 60%; 
+}
+
+ul li { list-style-type: circle; }
+ol li { list-style-type: decimal; }
+
+a { 
+  color: $link-color; 
+  &:hover {
+    color: $text-color;
+  }
+}

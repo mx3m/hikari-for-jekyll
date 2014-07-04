@@ -6,17 +6,36 @@ title: Homepage
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
-      <li itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-          <div class="p-wrap">
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="date"
-                itemprop="datePublished">
-              {{ post.date | date_to_string }}
-            </time>
-            <p itemprop="name headline">{{ post.title }}</p>
-          </div>
-        </a>
-      </li>
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+        <div class="p-wrap">
+          <time datetime="{{ post.date | date_to_xmlschema }}"
+              itemprop="datePublished">
+            {{ post.date | date_to_string }}
+          </time>
+          <p itemprop="name headline">{{ post.title }}</p>
+        </div>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a href="/page/{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+  <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a href="/" class="newer">Newer</a>
+    {% else %}
+    <a href="/page/{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+  <span class="previous">Newer</span>
+  {% endif %}
+</div>
+{% endif %}

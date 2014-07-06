@@ -18,8 +18,11 @@ Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-sav
 ### How to install
 
 1. Clone this repo
-2. Customize \_config.yml and delete all dummy posts
+2. Customize \_config.yml and replace all dummy posts by yours
+3. Change your profile picture in ~/assets/img/avatar.jpg
 3. Publish ([https://help.github.com/articles/using-jekyll-with-pages](I recommend GitHub pages, it's free))
+
+Note that publishing a Jekyll 2.0 website with Github Pages is a bit tricky right now though. Depending on the configuration of your repo (whether it is your main GH page or not), you'll probably have to only push the ouput of `jekyll build`, meaning the content of `_site`. Open an [https://github.com/m3xm/hikari-for-Jekyll/issues?state=open](issue) if you know how to solve this.
 
 
 ### Development
@@ -46,6 +49,7 @@ Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-sav
 - <http://m3xm.github.io>
 - <http://twitter.com/mx3m>
 - <http://www.dribbble.com/m3xm>
+
 
 ### Main Contributors
 

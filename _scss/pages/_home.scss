@@ -56,9 +56,9 @@
 .pagination {
   overflow: hidden;
   margin-top: 40px;
-  color: #ccc;
+  color: lighten($text-color, 60%);
   text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid $border-color;
 
   a, span {
     box-sizing: border-box;
@@ -69,14 +69,12 @@
 
     &:first-child {
       text-decoration: none;
-      border-right: 1px solid #eee;
+      border-right: 1px solid $border-color;
     }
   }
 
-  a {
-    &:hover {
+  a:hover {
       text-decoration: none;
-      background-color: #f5f5f5;
-    }
+      background-color: darken($smoke-color, 5%);
   }
 } // end .pagination

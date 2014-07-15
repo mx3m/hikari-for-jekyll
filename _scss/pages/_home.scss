@@ -52,3 +52,29 @@
 
   } // end li
 } // end .posts
+
+.pagination {
+  overflow: hidden;
+  margin-top: 40px;
+  color: lighten($text-color, 60%);
+  text-align: center;
+  border: 1px solid $border-color;
+
+  a, span {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+
+    &:first-child {
+      text-decoration: none;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  a:hover {
+      text-decoration: none;
+      background-color: darken($smoke-color, 5%);
+  }
+} // end .pagination

@@ -19,8 +19,8 @@ Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-sav
 
 1. Clone this repo
 2. Customize \_config.yml and replace all dummy posts by yours
-3. Change your profile picture in ~/assets/img/avatar.jpg
-3. Publish ([I recommend GitHub pages, it's free](https://help.github.com/articles/using-jekyll-with-pages))
+3. Change your profile picture in `~/assets/img/avatar.jpg`
+3. Publish (I recommend [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages), it's free)
 
 
 ### Development

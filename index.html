@@ -5,7 +5,7 @@ title: Homepage
 
 <div id="home">
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li itemscope itemtype="http://schema.org/BlogPosting">
       <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
         <div class="p-wrap">

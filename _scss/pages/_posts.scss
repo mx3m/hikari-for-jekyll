@@ -61,11 +61,18 @@
     margin: 0 0 $spacing-m;
   }
 
-  ul, 
+  ul,
   ol {
     margin: $spacing-m 0;
     li {
       margin-bottom: $spacing-xs;
+    }
+  }
+
+  p {
+    code {
+      @extend .highlight;
+      padding: 0;
     }
   }
 
@@ -118,21 +125,21 @@
   }
 }
 
-#prev { 
-  left: 40px; 
+#prev {
+  left: 40px;
   @media (max-width: 942px) {
-    float: left; 
+    float: left;
   }
 }
 
-#next { 
-  right: 40px; 
+#next {
+  right: 40px;
   @media (max-width: 942px) {
-    float: right; 
+    float: right;
   }
 }
 
-#prev:active, 
+#prev:active,
 #next:active {
   border-color: $main-color;
 }
@@ -140,7 +147,7 @@
 .nav-title {
   display: none;
   @media (max-width: 942px) {
-    display: inline; 
+    display: inline;
   }
 }
 

@@ -1,26 +1,26 @@
-.posts { 
+.posts {
   overflow: hidden;
-  li { 
-    display: inline-block; 
-    width: 100%; 
-    border-bottom: 1px solid darken($main-color, 6%); 
-    
+  li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid darken($main-color, 6%);
+
     &:first-child {
-      border-top: 1px solid darken($main-color, 6%); 
+      border-top: 1px solid darken($main-color, 6%);
     }
 
     .p-wrap {
       padding: $spacing-ml $spacing-m;
-      background: $main-color; 
+      background: $main-color;
       transition: all .15s ease-in;
-      &:active { 
+      &:active {
         background: darken($main-color, 3%);
       }
       &:hover {
-        background: lighten($main-color, 3%); 
+        background: lighten($main-color, 3%);
         padding-left: $spacing-m + $spacing-s;
         &::after {
-          content:'\2192'; 
+          content:'\2192';
           margin-left: $spacing-xs;
           @media (max-width: 942px) {
             content: none;
@@ -38,15 +38,18 @@
     } // end .p-wrap
 
     time {
-      color: darken($main-color, 20%); 
+      color: darken($main-color, 20%);
+      display: inline-block;
       padding-right: $spacing-s;
+      width: 155px;
       @media (max-width: 942px) {
         display: block;
+        width: auto;
       }
     }
 
     a {
-      color: white; 
+      color: white;
       text-decoration: none;
     }
 

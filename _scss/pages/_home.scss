@@ -18,13 +18,17 @@
       }
       &:hover {
         background: lighten($main-color, 3%);
-        padding-left: $spacing-m + $spacing-s;
-        &::after {
-          content:'\2192';
-          margin-left: $spacing-xs;
-          @media (max-width: 942px) {
-            content: none;
-            margin: 0;
+        .inner {
+          -webkit-transform: translateX($spacing-s);
+          -ms-transform: translateX($spacing-s);
+          transform: translateX($spacing-s);
+          &::after {
+            content:'\2192';
+            margin-left: $spacing-xs;
+            @media (max-width: 942px) {
+              content: none;
+              margin: 0;
+            }
           }
         }
       }
@@ -34,6 +38,9 @@
       p {
         display: inline;
         margin: $spacing-xs 0 0;
+      }
+      .inner {
+        transition: all .15s ease-in;
       }
     } // end .p-wrap
 

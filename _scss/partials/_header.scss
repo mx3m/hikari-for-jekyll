@@ -89,12 +89,12 @@ header {
     &.toggled {
       background: transparent;
       &::before {
-        transform: translateX(-8px) rotate(45deg);
+        transform:         translateX(-8px) rotate(45deg);
         -webkit-transform: translateX(-8px) rotate(45deg);
       }
       &::after {
         top: 0;
-        transform: translateX(8px) rotate(-45deg);
+        transform:         translateX(8px) rotate(-45deg);
         -webkit-transform: translateX(8px) rotate(-45deg);
       }
     }
@@ -129,7 +129,7 @@ header {
   height: 100%;
   background: $smoke-color;
   z-index: 100;
-  overflow: scroll;
+  overflow: auto;
 
   // insuring that off-canvas doesn't take more than the average iPhone portrait width under 400px
   @media (max-width: 399px) {
@@ -137,7 +137,8 @@ header {
   }
 
   &.toggled {
-    transform: translateX(-25em);
+    transform:         translateX(-25em);
+    -webkit-transform: translateX(-25em);
     border-left: 1px solid $border-color;
   }
 

@@ -34,14 +34,14 @@ header {
       }
 
       &::before {
-        transform:         rotate(45deg);
         -webkit-transform: rotate(45deg);
+        transform:         rotate(45deg);
         margin: 0;
       }
 
       &::after {
-        transform:         rotate(-45deg);
         -webkit-transform: rotate(-45deg);
+        transform:         rotate(-45deg);
         margin: 0;
       }
 
@@ -79,8 +79,8 @@ header {
       background: $text-color;
       border-radius: 20px;
 
-      transition: all .3s ease;
       -webkit-transition: all .3s ease;
+      transition: all .3s ease;
     }
 
     &::before { top: 8px; }
@@ -89,13 +89,13 @@ header {
     &.toggled {
       background: transparent;
       &::before {
-        transform:         translateX(-8px) rotate(45deg);
         -webkit-transform: translateX(-8px) rotate(45deg);
+        transform:         translateX(-8px) rotate(45deg);
       }
       &::after {
         top: 0;
-        transform:         translateX(8px) rotate(-45deg);
         -webkit-transform: translateX(8px) rotate(-45deg);
+        transform:         translateX(8px) rotate(-45deg);
       }
     }
   } // .lines
@@ -137,8 +137,8 @@ header {
   }
 
   &.toggled {
-    transform:         translateX(-25em);
     -webkit-transform: translateX(-25em);
+    transform:         translateX(-25em);
     border-left: 1px solid $border-color;
   }
 

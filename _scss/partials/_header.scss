@@ -5,7 +5,7 @@ header {
 
 .h-wrap {
   @extend %padding-large;
-  
+
   h1.title {
     @extend h3;
     display: inline-block;
@@ -23,29 +23,25 @@ header {
 
   .close {
     .lines {
-      -webkit-transition: background .3s 0s ease;
-      transition:         background .3s 0s ease;
       background: transparent;
 
-      &::before, 
+      &::before,
       &::after {
         top:0;
         width: 30px;
-        -webkit-transition: top .3s ease, 
-                            transform .3s .5s ease;   
-        transition:         top .3s ease, 
-                            transform .3s .5s ease; 
+        -webkit-transition: transform .3s ease;
+        transition:         transform .3s ease;
       }
 
       &::before {
-        transform:         rotate(45deg);
         -webkit-transform: rotate(45deg);
+        transform:         rotate(45deg);
         margin: 0;
       }
 
       &::after {
-        transform:         rotate(-45deg);
         -webkit-transform: rotate(-45deg);
+        transform:         rotate(-45deg);
         margin: 0;
       }
 
@@ -63,7 +59,7 @@ header {
   &:hover {
     opacity: 1;
   }
-  
+
   .lines {
     display: inline-block;
     position: relative;
@@ -81,10 +77,10 @@ header {
       width: 25px;
       height: 2px;
       background: $text-color;
-      border-radius: 20px; 
+      border-radius: 20px;
 
-      transition: all .3s ease;
       -webkit-transition: all .3s ease;
+      transition: all .3s ease;
     }
 
     &::before { top: 8px; }
@@ -93,18 +89,17 @@ header {
     &.toggled {
       background: transparent;
       &::before {
-        top: 0;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
+        -webkit-transform: translateX(-8px) rotate(45deg);
+        transform:         translateX(-8px) rotate(45deg);
       }
       &::after {
         top: 0;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
+        -webkit-transform: translateX(8px) rotate(-45deg);
+        transform:         translateX(8px) rotate(-45deg);
       }
     }
   } // .lines
-  
+
 } // end .menu-icon
 
 
@@ -125,8 +120,8 @@ header {
 }
 
 .off-canvas {
-  @extend %transition;
   @extend %padding-large;
+  transition: transform .3s ease;;
   position: fixed;
   top: 0;
   right: -25em;
@@ -134,7 +129,7 @@ header {
   height: 100%;
   background: $smoke-color;
   z-index: 100;
-  overflow: scroll;
+  overflow: auto;
 
   // insuring that off-canvas doesn't take more than the average iPhone portrait width under 400px
   @media (max-width: 399px) {
@@ -142,7 +137,8 @@ header {
   }
 
   &.toggled {
-    right: 0;
+    -webkit-transform: translateX(-25em);
+    transform:         translateX(-25em);
     border-left: 1px solid $border-color;
   }
 
@@ -161,7 +157,7 @@ header {
     display: block;
     h1 {
       @extend h3;
-      margin: 0; 
+      margin: 0;
     }
     p {
       font-size: 90%;

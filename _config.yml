@@ -31,7 +31,7 @@ markdown: kramdown
 permalink: pretty
 highlighter: pygments
 
-paginate: 10
+paginate: 5
 paginate_path: "/page/:num"
 
 # SCSS

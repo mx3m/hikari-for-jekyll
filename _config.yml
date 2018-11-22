@@ -29,7 +29,6 @@ ga_tracking_id: UA-47727049-1
 
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
 plugins:
   - jekyll-paginate-v2
 

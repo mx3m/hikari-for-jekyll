@@ -21,6 +21,9 @@ sites:
   - title: "I've also started to brew my own beers!"
     site:  tingtartid
     url:   https://kyrremann.github.io/tingtartid
+  - title: "Speaking of beers, I've also made a state site based on Untappd data"
+    site: allmy.beer
+    url: https://allmy.beer/
   - title: "An overview of my music listening habits"
     site:  last.fm
     url:   https://www.last.fm/user/Kyrremann

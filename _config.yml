@@ -19,8 +19,8 @@ sites:
     site:  untappd.com
     url:   https://untappd.com/user/Kyrremann
   - title: "I've also started to brew my own beers!"
-    site:  tingtartid.beer
-    url:   https://tingtartid.beer
+    site:  tingtartid
+    url:   https://kyrremann.github.io/tingtartid
   - title: "An overview of my music listening habits"
     site:  last.fm
     url:   https://www.last.fm/user/Kyrremann

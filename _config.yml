@@ -30,9 +30,12 @@ ga_tracking_id: UA-47727049-1
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+plugins:
+  - jekyll-paginate-v2
 
-paginate: 10
-paginate_path: "/page/:num"
+pagination:
+  per_page: 10
+  permalink: "/page/:num"
 
 # SCSS
 

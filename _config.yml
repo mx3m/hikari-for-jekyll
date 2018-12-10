@@ -29,7 +29,8 @@ ga_tracking_id: UA-47727049-1
 
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+plugins:
+  - jekyll-paginate
 
 paginate: 10
 paginate_path: "/page/:num"
